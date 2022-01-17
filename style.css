@@ -154,4 +154,7 @@ p,
         .products {
             gap: 6%;
         }
+      #redes {
+            flex-direction: column;
+        }
 }
