@@ -27,7 +27,7 @@ h1 {
     font-size: 8rem;
     display: flex;
     justify-content: center;
-    padding: 17px;
+    padding: 4%;
 }
 h2 {
     font-family: 'Lato', sans-serif;
@@ -41,19 +41,20 @@ a {
     display: flex;
     flex-wrap: wrap;
     background-color: pink;
-    padding: 15px;
+    padding: 1%;
 }
 #links a {
     color: #D500AB;
 }
 #links div:not(:last-child)::after {
     content: "|";
-    margin: 0 10px;
+    margin: 2 auto;
 }
 #links a:hover {
     background-color: #f097de;
 }
 #coverImage img {
+    width: 80%;
     min-width: 100%;
 }
 #coverImage {
@@ -67,17 +68,20 @@ p,
 }
 #highlights {
     background-color: pink;
-    padding: 15px;
+    padding: 1%;
     color: #D500AB;
 
 }
 #highImages {
-    max-width: 950px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
     margin: 0 auto;
+
 }
 .imageSize {
-    width: 250px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     background-position: center;
 }
 .products {
@@ -98,7 +102,7 @@ p,
     font-size: 1rem;
     color: white;
     z-index: 2;
-    padding: 15px;
+    padding: 4%;
     
 }
 .products:hover .shadow {
@@ -124,4 +128,30 @@ p,
 #baseboard {
     background-color: black;
     color: white;
+}
+#redes a {
+    color: white;
+}
+#redes {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;  
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 460px) {
+    #highImages {
+        flex-direction: column;
+        margin-top: 6%;
+        }
+        .products {
+            gap: 6%;
+        }
 }
